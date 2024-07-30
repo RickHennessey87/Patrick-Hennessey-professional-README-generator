@@ -22,7 +22,15 @@ function renderLicenseLink(license) {
   if (license === 'None') {
     return '';
   } else {
-    return `[License](#license)`;
+    const licenseLinks = {
+      "Apache License 2.0": "https://opensource.org/licenses/Apache-2.0",
+      "MIT License": "https://opensource.org/licenses/MIT",
+      "Boost Software License 1.0": "https://www.boost.org/LICENSE_1_0.txt",
+      "Eclipse Public License 2.0": "https://opensource.org/licenses/EPL-1.0",
+      "Mozilla Public License 2.0": "https://opensource.org/licenses/MPL-2.0",
+      "The Unlicense": "http://unlicense.org/"
+    }
+    return `[${license}](${licenseLinks[license]})`;
   }
 }
 
@@ -34,51 +42,52 @@ function renderLicenseSection(license) {
   } else {
     return `## License
     
-    This project is covered by the ${license} license.
+This project is covered by the ${license} license.
 
-    ${renderLicenseLink(license)}`
+${renderLicenseLink(license)}`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
 
-    ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-    ## Description
+## Description
         
-    ${data.description}
+${data.description}
         
-    ## Table of Contents
+## Table of Contents
         
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
         
-    ## Installation
+## Installation
         
-    ${data.installation}
+${data.installation}
         
-    ## Usage
+## Usage
         
-    ${data.usage}
+${data.usage}
         
-    ## Credits
+## Credits
         
-    GitHub: ${data.github}
-    Email: ${data.email}
-        
-    ${renderLicenseSection(data.license)}
-        
-    ## How to Contribute 
+GitHub: ${data.github}
+Email: ${data.email}
 
-    ${data.contribution}
+${renderLicenseSection(data.license)}
         
-    ## Tests
+## How to Contribute 
+
+${data.contribution}
         
-    ${data.test}`;
+## Tests
+        
+${data.test}`;
 }
 
 module.exports = generateMarkdown;
