@@ -1,10 +1,10 @@
 # Test Project
 
-    ![License](https://img.shields.io/badge/license-MIT-License-blue.svg)
+    ![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
     ## Description
         
-    Stuff
+    This is a test project. 
         
     ## Table of Contents
         
@@ -15,11 +15,11 @@
         
     ## Installation
         
-    norangvwoerng
+    Normal installation.
         
     ## Usage
         
-    wrengweporngew
+    Use Node.js and VSC
         
     ## Credits
         
@@ -35,8 +35,8 @@
         
     ## How to Contribute 
 
-    welrngonwer
+    No contributions
         
     ## Tests
         
-    werngowenrg
+    No testing.
