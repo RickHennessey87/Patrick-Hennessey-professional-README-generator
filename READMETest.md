@@ -1,11 +1,11 @@
 
-# t
+  # Patrick Hennessey's README Generator
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 ## Description
         
-t
+This application uses Node.js and a command-line application to dynamically generate a high-quality and professional README after a series of prompts from the user. The README contains what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions. The prompts are rendered using the Inquirer package.
         
 ## Table of Contents
         
@@ -16,27 +16,27 @@ t
         
 ## Installation
         
-t
+In order to use this application, the user needs Node.js, a command-line application, and the inquirer package installed. 
         
 ## Usage
         
-t
+To run the applicaton simply run "node index.js" in the command-line
         
 ## Credits
         
-GitHub: t
-Email: t
+GitHub: https://github.com/RickHennessey87
+Email: pjhennessey89@gmail.com
 
 ## License
     
-This project is covered by the MIT License license.
+This project is covered by the Mozilla Public License 2.0 license.
 
-[MIT License](https://opensource.org/licenses/MIT)
+[Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)
         
 ## How to Contribute 
 
-t
+No contributions needed.
         
 ## Tests
         
-t
+No tests available 
